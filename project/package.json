@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "ignore-styles": "^5.0.1",
     "medium-sdk": "0.0.4",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "webpack-isomorphic-tools": "^3.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +28,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-hot-loader": "^4.6.5"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react-app"
+    ]
+  }
 }

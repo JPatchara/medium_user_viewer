@@ -37,7 +37,9 @@ class App extends Component {
           <p className="App-title">
             Medium User Viewer
           </p>
-          <button className="App-button" alt="sign-in button">Sign in</button>
+          <button className="App-button" alt="sign-in button" onClick={() => this.callMediumSDK()}>
+            Sign in
+          </button>
           <a className="App-link" href="https://medium.com/" target="_blank" rel="noopener noreferrer">
             Medium Corporation
           </a>
